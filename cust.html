@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Banking System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/cust.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+        style="font-family:candara; font-size:18px; box-shadow: 0px 0px 10px 0px black;">
+        <div class="container-fluid">
+            <img src="logo.png" alt="" style="height: 80px; margin-left:25px; margin-top:10px;">
+            <h1 class="h2">Spark Bank</h1>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <b>
+                <ul class="navbar-nav ">
+                    <li class="nav-item nav-links" style="margin-left:15px;">
+                        <a class="nav-link  text-nowrap" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px; ">
+                        <a class="nav-link  text-nowrap" href="send_money.html">Send Money</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px;">
+                        <a class="nav-link active text-nowrap" href="cust.html">View All Customers</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px;">
+                        <a class="nav-link text-nowrap" href="transactions.php">Transactions</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px;">
+                        <a class="nav-link text-nowrap" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px; margin-right:75px;">
+                        <a class="nav-link text-nowrap" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </b>
+        </div>
+    </nav>
+        <div class="container">
+            <h1 class="size">ALL CUSTOMERS OF OUR BANK</h1>
+            <ul class="responsive-table">
+                <li class="table-header">
+                    <div class="col col-1">No.</div>
+                    <div class="col col-2">Name</div>
+                    <div class="col col-3">Email</div>
+                    <div class="col col-4">Amount(Rs.)</div>
+                    <div class="col col-5">Payment</div>
+                </li>
+                <li class="table-row">
+                    <div class="col col-1" data-label="No.">1</div>
+                    <div class="col col-2" data-label="Name">Virat</div>
+                    <div class="col col-3" data-label="Email">virat@gmail.com</div>
+                    <div class="col col-4" data-label="Amount"><a id="viratBankBalance">4500</a> ₹</div>
+                    <div class="col col-5" data-label="Payment"><a class="button" href="./payment.html">Transfer
+                            Money</a></div>
+                </li>
+                <li class="table-row">
+                    <div class="col col-1" data-label="No.">2</div>
+                    <div class="col col-2" data-label="Name">Sajan</div>
+                    <div class="col col-3" data-label="Email">sajan@gmail.com</div>
+                    <div class="col col-4" data-label="Amount"><a id="sajanBankBalance">2400</a> ₹</div>
+                    <div class="col col-5" data-label="Payment"><a class="button" href="./payment.html">Transfer
+                            Money</a></div>
+                </li>
+                <li class="table-row">
+                    <div class="col col-1" data-label="No.">3</div>
+                    <div class="col col-2" data-label="Name">Dhruv</div>
+                    <div class="col col-3" data-label="Email">dhruv@gmail.com</div>
+                    <div class="col col-4" data-label="Amount"><a id="dhruvBankBalance">3400</a> ₹</div>
+                    <div class="col col-5" data-label="Payment"><a class="button" href="./payment.html">Transfer
+                            Money</a></div>
+                </li>
+                <li class="table-row">
+                    <div class="col col-1" data-label="No.">4</div>
+                    <div class="col col-2" data-label="Name">Tirth</div>
+                    <div class="col col-3" data-label="Email"><a id="name">tirth</a>@gmail.com</div>
+                    <div class="col col-4" data-label="Amount"><a id="tirthBankBalance">5900</a> ₹</div>
+                    <div class="col col-5" data-label="Payment"><a class="button" href="./payment.html">Transfer
+                            Money</a></div>
+                </li>
+                <li class="table-row">
+                    <div class="col col-1" data-label="No.">5</div>
+                    <div class="col col-2" data-label="Name">Dhaval</div>
+                    <div class="col col-3" data-label="Email"><a id="name">dhaval</a>@gmail.com</div>
+                    <div class="col col-4" data-label="Amount"><a id="dhavalBankBalance">7000</a> ₹</div>
+                    <div class="col col-5" data-label="Payment"><a class="button" href="./payment.html">Transfer
+                            Money</a></div>
+                </li>
+                <li class="table-row">
+                    <div class="col col-1" data-label="No.">6</div>
+                    <div class="col col-2" data-label="Name">Armin</div>
+                    <div class="col col-3" data-label="Email"><a id="name">armin</a>@gmail.com</div>
+                    <div class="col col-4" data-label="Amount"><a id="arminBankBalance">8500</a> ₹</div>
+                    <div class="col col-5" data-label="Payment"><a class="button" href="./payment.html">Transfer
+                            Money</a></div>
+                </li>
+                <li class="table-row">
+                    <div class="col col-1" data-label="No.">7</div>
+                    <div class="col col-2" data-label="Name">Jay</div>
+                    <div class="col col-3" data-label="Email"><a id="name">jay</a>@gmail.com</div>
+                    <div class="col col-4" data-label="Amount"><a id="jayBankBalance">7800</a> ₹</div>
+                    <div class="col col-5" data-label="Payment"><a class="button" href="./payment.html">Transfer
+                            Money</a></div>
+                </li>
+                <li class="table-row">
+                    <div class="col col-1" data-label="No.">8</div>
+                    <div class="col col-2" data-label="Name">Mehul</div>
+                    <div class="col col-3" data-label="Email"><a id="name">mehul</a>@gmail.com</div>
+                    <div class="col col-4" data-label="Amount"><a id="mehulBankBalance">5300</a> ₹</div>
+                    <div class="col col-5" data-label="Payment"><a class="button" href="./payment.html">Transfer
+                            Money</a></div>
+                </li>
+                <li class="table-row">
+                    <div class="col col-1" data-label="No.">9</div>
+                    <div class="col col-2" data-label="Name">Niraj</div>
+                    <div class="col col-3" data-label="Email"><a id="name">niraj</a>@gmail.com</div>
+                    <div class="col col-4" data-label="Amount"><a id="nirajBankBalance">4600</a> ₹</div>
+                    <div class="col col-5" data-label="Payment"><a class="button" href="./payment.html">Transfer
+                            Money</a></div>
+                </li>
+                <li class="table-row">
+                    <div class="col col-1" data-label="No.">10</div>
+                    <div class="col col-2" data-label="Name">Pradip</div>
+                    <div class="col col-3" data-label="Email"><a id="name">pradip</a>@gmail.com</div>
+                    <div class="col col-4" data-label="Amount"><a id="pradipBankBalance">6800</a> ₹</div>
+                    <div class="col col-5" data-label="Payment"><a class="button" href="./payment.html">Transfer
+                            Money</a></div>
+                </li>
+            </ul>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Company, Inc</p>
+          </footer>
+</body>
+
+</html>

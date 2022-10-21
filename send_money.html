@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basic Banking System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/send.css">
+</head>
+
+<body class="text-center" data-new-gr-c-s-check-loaded="14.1084.0" data-gr-ext-installed="">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+    style="font-family:candara; font-size:18px; box-shadow: 0px 0px 10px 0px black;">
+    <div class="container-fluid">
+      <img src="logo.png" alt="" style="height: 80px; margin-left:25px; margin-top:10px;">
+      <h1 class="h2">Spark Bank</h1>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <b>
+        <ul class="navbar-nav ">
+          <li class="nav-item nav-links" style="margin-left:15px;">
+            <a class="nav-link  text-nowrap" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item" style="margin-left:15px; ">
+            <a class="nav-link active text-nowrap" href="send_money.html">Send Money</a>
+          </li>
+          <li class="nav-item" style="margin-left:15px;">
+            <a class="nav-link text-nowrap" href="cust.html">View All Customers</a>
+          </li>
+          <li class="nav-item" style="margin-left:15px;">
+            <a class="nav-link text-nowrap" href="transactions.php">Transactions</a>
+          </li>
+          <li class="nav-item" style="margin-left:15px;">
+            <a class="nav-link text-nowrap" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item" style="margin-left:15px; margin-right:75px;">
+            <a class="nav-link text-nowrap" href="about.html">About Us</a>
+          </li>
+        </ul>
+      </b>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-2" src="logo.png" alt="" width="75" height="100">
+      <h2 class="size">Send Money</h2>
+      <p class="lead"></p>
+      <div class="my-info text-center title">
+        <h1>Account Holder : Lucky </h1>
+        <h2>Net Bank Balance : <span id="myAccountBalance">10000</span> ₹</h2>
+        <h4>You can transfer money to our bank customers only</h4>
+        <!-- <button class="btn btn-info" data-toggle="modal" data-target="#sendMoney">Send Money</button> -->
+        <!-- <button class="btn btn-info" href="" data-toggle="modal" data-target="#transactionHistory">See All Transactions</button> --> 
+         <form action="index.php" method="post">
+          <input type="text" name="name" id="name" placeholder="Sender's Account Number">
+          <input type="text" name="age" id="age" placeholder="Amount to Tranfer">
+           <input class="btn mybtn btn-dark" type="submit" value="Transfer">
+                </div>
+    </div>
+  </div> 
+      <script src="/javascript/payment.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+      <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Company, Inc</p>
+      </footer>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Banking System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-family:candara; font-size:18px; box-shadow: 0px 0px 10px 0px black;">
+        <div class="container-fluid">
+            <img src="logo.png" alt="" style="height: 80px; margin-left:25px; margin-top:10px;">
+            <h1 class="h2" >Spark Bank</h1>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <b>
+                <ul class="navbar-nav ">
+                    <li class="nav-item nav-links" style="margin-left:15px;">
+                        <a class="nav-link active text-nowrap" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px; ">
+                        <a class="nav-link  text-nowrap" href="send_money.html">Send Money</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px;">
+                        <a class="nav-link text-nowrap" href="cust.html">View All Customers</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px;">
+                        <a class="nav-link text-nowrap" href="transactions.php">Transactions</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px;">
+                        <a class="nav-link text-nowrap" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px; margin-right:75px;">
+                        <a class="nav-link text-nowrap" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </b>
+        </div>
+    </nav>
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <img class="d-block mx-auto mb-2" src="logo.png" alt="" width="75" height="75">
+           <h1 class="h"><span class="fs-4" style="height: 80px; margin-left:25px; margin-top:10px;">Welcome to Spark Bank</span></h1>
+           <h1 class="h"><span class="fs-4" style="height: 80px; margin-left:25px; margin-top:10px;">Our Awesome Facilities</span></h1>
+          </a>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          </form>
+        </div>
+      </header>
+    <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="h">Here, you can watch every customer of the bank.</h2>
+                <!-- <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                    tellus ac cursus commodo.</p> -->
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <!-- <button class="btn btn-secondary btn-lg" type="button">View Customers</button> -->
+                        <a href="cust.html"><button type="button" class="btn btn-secondary btn-lg">View
+                            Customers</button></a><br>
+                      </div>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="c4.png" alt="">
+                 
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="h">Here, you can send money from your account.</h2>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <a href="send_money.html"><button type="button" class="btn btn-secondary btn-lg">Send Money</button></a><br>
+                      </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="c5.png" alt="">
+                 
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="h">Here, you can see all Transation.</h2>
+                <!-- <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                    tellus ac cursus commodo.</p> -->
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-secondary btn-lg" type="button">See All Transactions</button>
+                      </div>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="c6.png" alt="">
+                 
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Company, Inc</p>
+      </footer>
+  </body>
+</html>
+<!-- <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">Simple header</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+    </ul>
+  </header> -->
